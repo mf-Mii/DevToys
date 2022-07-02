@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowSize - DevToys for mf_Mii</title>
+    <style>
+        #box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span id="w"></span> x <span id="h"></span>
+    </div>
+    <script>
+        function onResizeEvent() {
+            var wE = document.getElementById("w");
+            var hE = document.getElementById("h");
+            wE.innerText = window.outerWidth;
+            hE.innerText = window.outerHeight;
+        }
+        window.onresize = onResizeEvent;
+        onResizeEvent();
+    </script>
+</body>
+</html>

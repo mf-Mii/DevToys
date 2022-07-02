@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevToys for mf_Mii</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+        }
+        .container {
+            display: block;
+            text-align: center;
+        }
+        .container ul {
+            display: inline-block;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>mf_Miiの開発おもちゃ箱</h1>
+        <ul>
+            <li>
+                <a href="windowSize.html" onclick="OpenAsPopup('windowSize.html');return false;" target="_blank" rel="noopener noreferrer">WindowSize</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function OpenAsPopup(page) {
+            window.open(page, null, 'top=100,left=100,width=500,height=300')
+            return false;
+        }
+    </script>
+</body>
+</html>
